@@ -32,3 +32,9 @@ h1{
     text-align: center;
     color: yellowgreen;
 }
+
+@media (max-width: 600px) {
+    .input {
+        margin-top: 10px;
+    }
+}
