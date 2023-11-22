@@ -2,15 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+}     
 .input{
-   margin-top: 300px;
-   text-align: center;
-   background: cadetblue;
-   padding: 30px;
-   border-radius: 5px;
-   align-items: center;
+    margin-top: 300px;
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+    background-color: #f0f0f0;
 }
 input{
     border-radius: 10px;
@@ -29,4 +27,8 @@ input{
 p{
     font-size: 20px;
     color: blue;
+}
+h1{
+    text-align: center;
+    color: yellowgreen;
 }

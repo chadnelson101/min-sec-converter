@@ -1,25 +1,15 @@
 
+document.getElementById('converter').addEventListener('click', 
 
-document.getElementById('converter').addEventListener('click')
-
-function convert(){
+function() {
     let minutesInput = document.getElementById('minutes').value;
-    
-        let results = minutesInput.value * 60;
-    
-        document.getElementById('seconds').value = results;
+
+    if (isNaN(minutesInput)) {
+        alert('Please enter a valid number');
+        return;
     }
 
-// }
-// button.addEventListener('click',convert);
+    let seconds = minutesInput * 60;
 
-// document.getElementById('converter').addEventListener('click', function() {
-//     // Get the value entered in minutes input
-//     let minutesInput = document.getElementById('minutes').value;
-
-//     // Convert minutes to seconds
-//     let seconds = minutesInput * 60;
-
-//     // Display the result in the seconds input
-//     document.getElementById('seconds').value = seconds;
-// });
+    document.getElementById('seconds').value = seconds;
+});
